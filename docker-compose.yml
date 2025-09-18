@@ -64,28 +64,89 @@ services:
       - QDRANT__SERVICE__GRPC_PORT=6334
     restart: unless-stopped
 
-  # 개발 환경용 서비스
+  # 개발 환경용 서비스 (라이브 코드 편집)
   doc-analyzer-dev:
     build:
       context: .
       dockerfile: Dockerfile
       target: base
+    image: doc-analyzer:dev-latest
     container_name: doc-analyzer-dev
     volumes:
-      - .:/app
-      - /app/venv  # 가상환경 제외
+      - .:/app:rw  # 전체 소스코드 마운트 (라이브 편집)
+      - ./data/input:/app/data/input:rw
+      - ./data/output:/app/data/output:rw
+      - ./logs:/app/logs:rw
+      - shared_models:/app/data/models:rw
+      # 제외할 디렉토리들
+      - /app/.git
+      - /app/venv
+      - /app/__pycache__
+      - /app/*.egg-info
     environment:
       - PROCESSING_MODE=auto
       - LOG_LEVEL=DEBUG
+      - PYTHONPATH=/app/src
+      - PYTHONUNBUFFERED=1
+      - CUDA_VISIBLE_DEVICES=""  # 개발 환경은 CPU만
     ports:
-      - "8002:8000"
+      - "8002:8000"  # 개발 서버 포트
+    networks:
+      - doc-analyzer-net
+    restart: "no"  # 개발용이므로 자동 재시작 안함
     stdin_open: true
     tty: true
-    command: bash
+    profiles:
+      - dev  # 프로파일로 분리 (개발시에만 실행)
+    command: ["/bin/bash"]
 
-volumes:
-  qdrant_storage:
+  # 로드 밸런서용 nginx (다중 인스턴스 운영 시)
+  load-balancer:
+    image: nginx:alpine
+    container_name: doc-analyzer-lb
+    ports:
+      - "80:80"
+    volumes:
+      - ./config/nginx.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - doc-analyzer-net
+    restart: unless-stopped
+    profiles:
+      - production
+    depends_on:
+      - doc-analyzer-cpu
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+          cpus: '0.2'
+        reservations:
+          memory: 64M
+          cpus: '0.1'
 
-networks:
-  default:
-    name: doc-analyzer-network
+# =============================================================================
+# Docker Compose 사용법 가이드
+# =============================================================================
+#
+# 기본 실행:
+#   docker-compose up doc-analyzer-cpu
+#
+# GPU 버전 실행 (NVIDIA Docker 필요):
+#   docker-compose up doc-analyzer-gpu
+#
+# 벡터 DB와 함께 실행:
+#   docker-compose up doc-analyzer-cpu qdrant
+#
+# 개발 환경 실행:
+#   docker-compose --profile dev up doc-analyzer-dev
+#
+# 프로덕션 환경 (로드밸런서 포함):
+#   docker-compose --profile production up
+#
+# 모든 서비스 중지:
+#   docker-compose down
+#
+# 볼륨과 함께 완전 정리:
+#   docker-compose down -v --remove-orphans
+#
+# =============================================================================

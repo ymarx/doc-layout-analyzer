@@ -117,3 +117,6 @@ temp/
 
 # Keep template examples but ignore large generated files
 !templates/definitions/*.json
+
+# Docker deployment documentation (exclude from git)
+DOCKER_DEPLOYMENT.md
