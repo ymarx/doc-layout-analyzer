@@ -1,0 +1,20 @@
+{
+  "field_extraction_accuracy": 1.0,
+  "bbox_improvement_score": 0.0,
+  "template_confidence": 0.76,
+  "stages_completed": [
+    "parsing",
+    "output_generation",
+    "quality_assessment",
+    "enhanced_template_matching",
+    "user_template_generation",
+    "quality_assessment",
+    "docjson_enhancement"
+  ],
+  "processing_time": 0.0,
+  "improvement_summary": {
+    "original_confidence": 0.33,
+    "improved_confidence": 0.76,
+    "improvement_rate": 130.3030303030303
+  }
+}

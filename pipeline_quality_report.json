@@ -1,0 +1,41 @@
+{
+  "document": "기술기준_예시.docx",
+  "timestamp": "2025-09-17T15:10:18.039602",
+  "assessments": {
+    "basic_processing": {
+      "processing_time": 0.016483,
+      "success": true,
+      "docjson_generated": true,
+      "sections_count": 10,
+      "total_blocks": 43,
+      "performance_score": 99.83517,
+      "structure_score": 100,
+      "overall_score": 99.917585
+    },
+    "template_system": {
+      "template_matched": true,
+      "template_name": "기술기준_표준템플릿",
+      "confidence": 1.0,
+      "auto_applied": true,
+      "matched_fields": 9,
+      "overall_score": 96.66666666666667
+    },
+    "hybrid_system": {
+      "annotation_generated": true,
+      "total_fields": 9,
+      "extracted_values": 9,
+      "template_fields": 0,
+      "auto_detected_fields": 0,
+      "overall_score": 88.33333333333333
+    },
+    "output_quality": {
+      "metadata_files": 13,
+      "docjson_files": 2,
+      "annotation_files": 10,
+      "template_files": 1,
+      "file_integrity": true,
+      "overall_score": 100.0
+    }
+  },
+  "overall_score": 95.31272958333335
+}

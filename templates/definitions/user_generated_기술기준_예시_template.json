@@ -1,0 +1,306 @@
+{
+  "template_id": "user_generated_기술기준_예시_template",
+  "name": "기술기준_예시_template (사용자 생성)",
+  "description": "사용자가 생성한 템플릿 - 2025-09-17 17:47에 생성",
+  "document_type": "기술기준",
+  "version": "1.0",
+  "created_by": "user_annotation_system",
+  "created_at": "2025-09-17T17:47:48.310303",
+  "elements": [
+    {
+      "name": "title",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*title.*"
+      ],
+      "required": true,
+      "confidence_threshold": 0.95,
+      "description": "자동 감지된 title",
+      "position_hints": {
+        "typical_location": "header",
+        "y_range": [
+          0.0,
+          20.0
+        ],
+        "x_range": [
+          0.0,
+          100.0
+        ],
+        "page": 1
+      }
+    },
+    {
+      "name": "section_1_scope",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*section_1_scope.*"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7,
+      "description": "자동 감지된 section_1_scope",
+      "position_hints": {
+        "typical_location": "header",
+        "y_range": [
+          0.0,
+          20.0
+        ],
+        "x_range": [
+          0.0,
+          100.0
+        ],
+        "page": 1
+      }
+    },
+    {
+      "name": "section_2_purpose",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*section_2_purpose.*"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7,
+      "description": "자동 감지된 section_2_purpose",
+      "position_hints": {
+        "typical_location": "header",
+        "y_range": [
+          0.0,
+          20.0
+        ],
+        "x_range": [
+          0.0,
+          100.0
+        ],
+        "page": 1
+      }
+    },
+    {
+      "name": "section_3_management",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*section_3_management.*"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7,
+      "description": "자동 감지된 section_3_management",
+      "position_hints": {
+        "typical_location": "header",
+        "y_range": [
+          0.0,
+          20.0
+        ],
+        "x_range": [
+          0.0,
+          100.0
+        ],
+        "page": 1
+      }
+    },
+    {
+      "name": "section_4_standards",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*section_4_standards.*"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7,
+      "description": "자동 감지된 section_4_standards",
+      "position_hints": {
+        "typical_location": "header",
+        "y_range": [
+          0.0,
+          20.0
+        ],
+        "x_range": [
+          0.0,
+          100.0
+        ],
+        "page": 1
+      }
+    },
+    {
+      "name": "section_4_1_meaning",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*section_4_1_meaning.*"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7,
+      "description": "자동 감지된 section_4_1_meaning",
+      "position_hints": {
+        "typical_location": "header",
+        "y_range": [
+          0.0,
+          20.0
+        ],
+        "x_range": [
+          0.0,
+          100.0
+        ],
+        "page": 1
+      }
+    },
+    {
+      "name": "section_4_2_recovery",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*section_4_2_recovery.*"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7,
+      "description": "자동 감지된 section_4_2_recovery",
+      "position_hints": {
+        "typical_location": "header",
+        "y_range": [
+          0.0,
+          20.0
+        ],
+        "x_range": [
+          0.0,
+          100.0
+        ],
+        "page": 1
+      }
+    },
+    {
+      "name": "section_4_2_1_heat_securing",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*section_4_2_1_heat_securing.*"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7,
+      "description": "자동 감지된 section_4_2_1_heat_securing",
+      "position_hints": {
+        "typical_location": "header",
+        "y_range": [
+          0.0,
+          20.0
+        ],
+        "x_range": [
+          0.0,
+          100.0
+        ],
+        "page": 1
+      }
+    },
+    {
+      "name": "technical_keywords",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*technical_keywords.*"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7,
+      "description": "자동 감지된 technical_keywords"
+    },
+    {
+      "name": "document_number",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*document_number.*"
+      ],
+      "required": true,
+      "confidence_threshold": 0.95,
+      "description": "자동 감지된 document_number"
+    },
+    {
+      "name": "effective_date",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*effective_date.*"
+      ],
+      "required": true,
+      "confidence_threshold": 0.95,
+      "description": "자동 감지된 effective_date"
+    },
+    {
+      "name": "author",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*author.*"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7,
+      "description": "자동 감지된 author"
+    },
+    {
+      "name": "revision",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*revision.*"
+      ],
+      "required": true,
+      "confidence_threshold": 0.8,
+      "description": "자동 감지된 revision"
+    },
+    {
+      "name": "process_flow_step_1",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*process_flow_step_1.*"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7,
+      "description": "자동 감지된 process_flow_step_1",
+      "position_hints": {
+        "typical_location": "header",
+        "y_range": [
+          0.0,
+          20.0
+        ],
+        "x_range": [
+          0.0,
+          100.0
+        ],
+        "page": 1
+      }
+    },
+    {
+      "name": "process_flow_step_2",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*process_flow_step_2.*"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7,
+      "description": "자동 감지된 process_flow_step_2"
+    },
+    {
+      "name": "process_flow_step_3",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*process_flow_step_3.*"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7,
+      "description": "자동 감지된 process_flow_step_3"
+    },
+    {
+      "name": "process_flow_step_4",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        ".*process_flow_step_4.*"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7,
+      "description": "자동 감지된 process_flow_step_4"
+    }
+  ]
+}

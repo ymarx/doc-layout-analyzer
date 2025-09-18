@@ -1,0 +1,85 @@
+{
+  "template_id": "technical_standard_v1",
+  "name": "기술기준서",
+  "description": "제철소 기술기준서 표준 양식",
+  "document_type": "docx",
+  "version": "1.0",
+  "elements": [
+    {
+      "name": "document_number",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        "TP-\\d{3}-\\d{3}-\\d{3}",
+        "[A-Z]{2,3}-\\d{3}-\\d{3}-\\d{3}",
+        "문서번호[:\\s]*([A-Z0-9-]+)"
+      ],
+      "required": true,
+      "confidence_threshold": 0.9
+    },
+    {
+      "name": "effective_date",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        "\\d{2}\\.\\d{2}\\.\\d{2}",
+        "\\d{4}-\\d{2}-\\d{2}",
+        "시행일[:\\s]*(\\d{2}\\.\\d{2}\\.\\d{2})"
+      ],
+      "required": true
+    },
+    {
+      "name": "revision",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        "Rev\\.(\\d+)",
+        "개정[:\\s]*(\\d+)",
+        "버전[:\\s]*(\\d+)"
+      ],
+      "required": false
+    },
+    {
+      "name": "author",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        "작성자[:\\s]*([가-힣\\s]+)",
+        "작성[:\\s]*([가-힣\\s]+)"
+      ],
+      "required": false
+    },
+    {
+      "name": "section_headers",
+      "element_type": "structural",
+      "extraction_method": "pattern",
+      "patterns": [
+        "^\\d+\\.\\s+(.+)",
+        "^\\d+\\.\\d+\\s+(.+)",
+        "^\\d+\\.\\d+\\.\\d+\\s+(.+)"
+      ],
+      "required": true
+    },
+    {
+      "name": "process_flow",
+      "element_type": "diagram",
+      "extraction_method": "inference",
+      "patterns": [
+        "[①②③④⑤⑥⑦⑧⑨⑩]",
+        "\\d+\\.\\s*[^→]*→",
+        "단계|수순|흐름|프로세스"
+      ],
+      "required": false
+    }
+  ],
+  "hierarchy_patterns": {
+    "level_1": "^\\d+\\.\\s+(.+)",
+    "level_2": "^\\d+\\.\\d+\\s+(.+)",
+    "level_3": "^\\d+\\.\\d+\\.\\d+\\s+(.+)"
+  },
+  "metadata_mapping": {
+    "title": "제목",
+    "department": "부서",
+    "process": "공정"
+  }
+}

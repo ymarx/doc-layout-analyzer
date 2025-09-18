@@ -1,0 +1,91 @@
+# Document Layout Analyzer Dependencies
+# CPU 기본 설정으로 GPU는 선택사항
+
+# Core Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
+
+# Configuration & Utilities
+pyyaml==6.0.1
+python-dotenv==1.0.0
+click==8.1.7
+tqdm==4.66.1
+loguru==0.7.2
+
+# Document Processing
+python-docx==1.1.0
+python-pptx==0.6.23
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+camelot-py[cv]==0.10.1
+tabula-py==2.9.0
+openpyxl==3.1.2
+
+# OCR & Layout Analysis
+paddlepaddle-gpu==2.5.2; sys_platform != "darwin"  # Linux/Windows with GPU support
+paddlepaddle==2.5.2; sys_platform == "darwin"      # macOS CPU only
+paddleocr==2.7.3
+
+# Alternative OCR (fallback)
+pytesseract==0.3.10
+easyocr==1.7.0
+
+# Image Processing
+opencv-python==4.8.1.78
+Pillow==10.1.0
+scikit-image==0.22.0
+numpy==1.24.4
+
+# ML & Embeddings (CPU optimized)
+torch==2.1.1+cpu; sys_platform != "darwin"
+torch==2.1.1; sys_platform == "darwin"
+torchvision==0.16.1+cpu; sys_platform != "darwin"
+torchvision==0.16.1; sys_platform == "darwin"
+sentence-transformers==2.2.2
+transformers==4.36.0
+onnxruntime==1.16.3  # CPU inference optimization
+
+# Vector Database
+qdrant-client==1.7.0
+chromadb==0.4.18  # Alternative vector DB
+
+# Text Processing
+spacy==3.7.2
+konlpy==0.6.0  # Korean NLP
+kiwisolver==1.4.5
+
+# Data Processing
+pandas==2.1.4
+pyarrow==14.0.1
+
+# HTTP & Async
+httpx==0.25.2
+aiofiles==23.2.1
+aiohttp==3.9.1
+
+# System Monitoring
+psutil==5.9.6
+py-cpuinfo==9.0.0
+
+# Development & Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+
+# Optional GPU dependencies (install separately if needed)
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+# pip install paddlepaddle-gpu==2.5.2
+
+# LibreOffice (system installation required)
+# Ubuntu/Debian: sudo apt-get install libreoffice
+# macOS: brew install --cask libreoffice
+# Windows: Download from libreoffice.org
+
+# For OCRmyPDF (system dependencies)
+# Ubuntu/Debian: sudo apt-get install ocrmypdf
+# macOS: brew install ocrmypdf
+# Windows: Use conda or pip install ocrmypdf

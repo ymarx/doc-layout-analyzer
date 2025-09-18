@@ -1,0 +1,20 @@
+{
+  "document_id": "80d34e68-f9b2-4de9-bcc7-67e959a229f4",
+  "processing_level": "standard",
+  "processing_time": 0.0,
+  "stages_completed": [
+    "parsing"
+  ],
+  "confidence_scores": {
+    "parsing": 0.95
+  },
+  "quality_score": null,
+  "preset_used": {
+    "description": "표준 처리 - 템플릿 매칭과 자동 주석",
+    "template_matching": true,
+    "auto_annotations": true,
+    "vectorization": false
+  },
+  "timestamp": "2025-09-17T15:52:56.195663",
+  "pipeline_version": "2.0"
+}

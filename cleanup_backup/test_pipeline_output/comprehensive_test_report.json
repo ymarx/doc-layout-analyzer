@@ -1,0 +1,162 @@
+{
+  "test_summary": {
+    "timestamp": "2025-09-17T15:52:56.197124",
+    "total_time": 16.6676127910614,
+    "success_rate": 100.0,
+    "grade": "🏆 A+ (우수)",
+    "output_directory": "test_pipeline_output"
+  },
+  "test_results": {
+    "individual_modules": {
+      "status": "✅ PASS",
+      "details": {
+        "unified_parser": {
+          "initialized": true,
+          "supports_docx": true,
+          "parsing_modes": 3
+        },
+        "config_manager": {
+          "initialized": true,
+          "presets_count": 3,
+          "current_level": "standard"
+        },
+        "template_manager": {
+          "initialized": true,
+          "templates_dir_exists": true
+        },
+        "annotation_manager": {
+          "initialized": true,
+          "annotations_path_exists": true
+        }
+      },
+      "passed_modules": 4
+    },
+    "parser_functionality": {
+      "status": "✅ PASS",
+      "successful_modes": "3/3",
+      "details": {
+        "basic": {
+          "success": true,
+          "processing_time": 0.020140886306762695,
+          "has_content": true,
+          "docjson_generated": true,
+          "error": null
+        },
+        "enhanced": {
+          "success": true,
+          "processing_time": 0.02233409881591797,
+          "has_content": true,
+          "docjson_generated": true,
+          "error": null
+        },
+        "xml_only": {
+          "success": true,
+          "processing_time": 0.00551295280456543,
+          "has_content": true,
+          "docjson_generated": true,
+          "error": null
+        }
+      },
+      "best_performance": 0.00551295280456543
+    },
+    "configuration_system": {
+      "status": "✅ PASS",
+      "levels_tested": 3,
+      "convenience_functions": 3,
+      "migration_support": true,
+      "details": {
+        "basic": {
+          "level": "basic",
+          "description": "빠른 기본 처리 - 텍스트와 표만 추출",
+          "template_matching": false,
+          "auto_annotations": false,
+          "vectorization": false,
+          "output_formats": [
+            "docjson"
+          ]
+        },
+        "standard": {
+          "level": "standard",
+          "description": "표준 처리 - 템플릿 매칭과 자동 주석",
+          "template_matching": true,
+          "auto_annotations": true,
+          "vectorization": false,
+          "output_formats": [
+            "docjson",
+            "annotations"
+          ]
+        },
+        "complete": {
+          "level": "complete",
+          "description": "완전 처리 - 모든 기능 활성화 (벡터화 포함)",
+          "template_matching": true,
+          "auto_annotations": true,
+          "vectorization": true,
+          "output_formats": [
+            "docjson",
+            "annotations",
+            "vectors"
+          ]
+        }
+      }
+    },
+    "pipeline_stages": {
+      "status": "✅ PASS",
+      "successful_stages": "2/3",
+      "details": {
+        "parsing": {
+          "success": true,
+          "docjson_created": true
+        },
+        "template_matching": {
+          "success": false,
+          "template_found": false
+        },
+        "quality_assessment": {
+          "success": true,
+          "quality_score": 23.75
+        }
+      },
+      "final_quality_score": 23.75
+    },
+    "end_to_end": {
+      "status": "✅ PASS",
+      "successful_levels": "2/2",
+      "details": {
+        "basic": {
+          "success": true,
+          "processing_time": 4.9371018409729,
+          "stages_completed": 3,
+          "quality_score": 24.375,
+          "output_files": 2,
+          "error": null
+        },
+        "standard": {
+          "success": true,
+          "processing_time": 4.773292064666748,
+          "stages_completed": 3,
+          "quality_score": 24.375,
+          "output_files": 2,
+          "error": null
+        }
+      },
+      "average_quality": 24.375
+    },
+    "output_quality": {
+      "status": "✅ PASS",
+      "quality_score": 100,
+      "details": {
+        "total_output_files": 10,
+        "metadata_files": 2,
+        "docjson_files": 4,
+        "directories_created": 3,
+        "file_integrity": true
+      }
+    }
+  },
+  "system_info": {
+    "pipeline_version": "2.0_refactored",
+    "test_framework": "comprehensive_pipeline_test",
+    "python_version": "3.9.12 (main, Apr  5 2022, 01:53:17) \n[Clang 12.0.0 ]"
+  }
+}

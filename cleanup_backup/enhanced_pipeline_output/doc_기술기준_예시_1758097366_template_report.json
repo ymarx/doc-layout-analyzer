@@ -1,0 +1,168 @@
+{
+  "template_id": "technical_standard_v2_improved",
+  "confidence": 0.6658823529411766,
+  "strategy_used": "exact_pattern",
+  "matched_fields": {
+    "title": {
+      "value": "노황변동, 날바람(吹拔 : Channeling)과 장입물 오장입시의 조치 기준에 대하여 적용한다. 2. 목 적 \t노황변동시 복구를 위한 수순 및 기준에 대한 정확한 이해를 토대로 고로 노황을 안정된 상태로 지속 유지하기 위함이다.  3. 중점관리항목 4. 조업기준",
+      "pattern": "노황변동.*조치.*기준",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      }
+    },
+    "section_1_scope": {
+      "value": "1. 적용범위",
+      "pattern": "1\\.\\s*적용범위",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      }
+    },
+    "section_2_purpose": {
+      "value": "2. 목 적",
+      "pattern": "2\\.\\s*목\\s*적",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      }
+    },
+    "section_3_management": {
+      "value": "3. 중점관리항목",
+      "pattern": "3\\.\\s*중점관리항목",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      }
+    },
+    "section_4_standards": {
+      "value": "4. 조업기준",
+      "pattern": "4\\.\\s*조업기준",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      }
+    },
+    "section_4_1_meaning": {
+      "value": "4.1 노황변동의 의미",
+      "pattern": "4\\.1\\s*노황변동의\\s*의미",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      }
+    },
+    "section_4_2_recovery": {
+      "value": "4.2 노황복구 수순",
+      "pattern": "4\\.2\\s*노황복구\\s*수순",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      }
+    },
+    "section_4_2_1_heat_securing": {
+      "value": "4.2.1 노열확보",
+      "pattern": "4\\.2\\.1\\s*노열확보",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      }
+    },
+    "technical_keywords": {
+      "value": "고로조업",
+      "pattern": "고로조업",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      }
+    },
+    "document_number": {
+      "value": "TP-030-030-050",
+      "confidence": 0.95,
+      "method": "docjson_metadata",
+      "bbox": null
+    },
+    "effective_date": {
+      "value": "25.07.28",
+      "confidence": 0.95,
+      "method": "docjson_metadata",
+      "bbox": null
+    },
+    "author": {
+      "value": "진 다 훈",
+      "confidence": 0.95,
+      "method": "docjson_metadata",
+      "bbox": null
+    },
+    "revision": {
+      "value": "10",
+      "confidence": 0.95,
+      "method": "docjson_metadata",
+      "bbox": null
+    },
+    "process_flow_step_1": {
+      "value": "① 노열확보",
+      "confidence": 0.9,
+      "method": "process_flow",
+      "bbox": null
+    },
+    "process_flow_step_2": {
+      "value": "② 통기성 확보",
+      "confidence": 0.9,
+      "method": "process_flow",
+      "bbox": null
+    },
+    "process_flow_step_3": {
+      "value": "③ 풍량확보 및 연화융착대형성",
+      "confidence": 0.9,
+      "method": "process_flow",
+      "bbox": null
+    },
+    "process_flow_step_4": {
+      "value": "④ 조업도 상승 ( 증광 증산)",
+      "confidence": 0.9,
+      "method": "process_flow",
+      "bbox": null
+    }
+  },
+  "missing_fields": [
+    "department"
+  ],
+  "bbox_accuracy": 0.0,
+  "match_details": {}
+}

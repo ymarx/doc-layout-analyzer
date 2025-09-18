@@ -1,0 +1,63 @@
+{
+  "document_info": {
+    "title": "노황변동 조치 기준",
+    "document_number": "TP-030-030-050",
+    "revision": "10",
+    "effective_date": "25.07.28"
+  },
+  "process_flows": [
+    {
+      "name": "노황복구 수순",
+      "type": "sequential",
+      "confidence": 0.8999999999999999,
+      "steps": [
+        {
+          "sequence": 1,
+          "marker": "①",
+          "title": "노열확보",
+          "details": []
+        },
+        {
+          "sequence": 2,
+          "marker": "②",
+          "title": "통기성 확보",
+          "details": []
+        },
+        {
+          "sequence": 3,
+          "marker": "③",
+          "title": "풍량확보 및 연화융착대형성",
+          "details": []
+        },
+        {
+          "sequence": 4,
+          "marker": "④",
+          "title": "조업도 상승 ( 증광 증산)",
+          "details": [
+            "증광 증산"
+          ]
+        }
+      ]
+    }
+  ],
+  "analysis_results": {
+    "recognition_score": 90.9090909090909,
+    "processing_time": 0.02687692642211914,
+    "extracted_elements": [
+      "document_metadata",
+      "process_flows",
+      "sequential_steps",
+      "diagram_content"
+    ]
+  },
+  "parsing_info": {
+    "parser_version": "2.0 with DiagramFlowAnalyzer",
+    "features": [
+      "process_flow_extraction",
+      "sequence_detection",
+      "marker_recognition",
+      "diagram_text_analysis"
+    ],
+    "success": true
+  }
+}

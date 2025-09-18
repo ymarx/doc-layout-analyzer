@@ -1,0 +1,496 @@
+{
+  "version": "2.0",
+  "doc_id": "doc_기술기준_예시",
+  "metadata": {
+    "title": "고로조업에서 통기성 불량으로 인한 노황변동, 날바람(吹拔 : Channeling)과 장입물 오장입시의 조치 기준에 대하여 적용한다.",
+    "doc_type": "docx",
+    "version": null,
+    "effective_date": "25.07.28",
+    "language": [
+      "ko",
+      "en"
+    ],
+    "author": "진 다 훈",
+    "created": "2025-09-17T17:30:24.689165",
+    "modified": "2025-09-17T17:30:24.689181",
+    "source": [
+      {
+        "name": "노황복구 수순",
+        "type": "sequential",
+        "confidence": 0.8999999999999999,
+        "steps": [
+          {
+            "sequence": 1,
+            "marker": "①",
+            "title": "노열확보",
+            "details": []
+          },
+          {
+            "sequence": 2,
+            "marker": "②",
+            "title": "통기성 확보",
+            "details": []
+          },
+          {
+            "sequence": 3,
+            "marker": "③",
+            "title": "풍량확보 및 연화융착대형성",
+            "details": []
+          },
+          {
+            "sequence": 4,
+            "marker": "④",
+            "title": "조업도 상승 ( 증광 증산)",
+            "details": [
+              "증광 증산"
+            ]
+          }
+        ]
+      }
+    ],
+    "pages": 1,
+    "file_size": 0,
+    "document_number": "TP-030-030-050",
+    "revision": "10",
+    "template_id": "technical_standard_v2_improved",
+    "template_confidence": 0.6658823529411766,
+    "template_strategy": "exact_pattern",
+    "extracted_fields_count": 17,
+    "bbox_accuracy": 0.5294117647058822
+  },
+  "sections": [
+    {
+      "id": "section_1",
+      "path": [
+        "root"
+      ],
+      "heading": "Document Content",
+      "level": 1,
+      "blocks": [
+        {
+          "id": "block_0",
+          "type": "paragraph",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 20.0,
+            "page": 1
+          },
+          "content": {
+            "text": "1. 적용범위"
+          },
+          "semantic": {
+            "keywords": [
+              "paragraph"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.9
+          }
+        },
+        {
+          "id": "block_1",
+          "type": "paragraph",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 20.0,
+            "page": 1
+          },
+          "content": {
+            "text": "\t고로조업에서 통기성 불량으로 인한 노황변동, 날바람(吹拔 : Channeling)과 장입물 오장입시의 조치 기준에 대하여 적용한다."
+          },
+          "semantic": {
+            "keywords": [
+              "paragraph"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.9
+          }
+        },
+        {
+          "id": "block_2",
+          "type": "paragraph",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 20.0,
+            "page": 1
+          },
+          "content": {
+            "text": "2. 목 적"
+          },
+          "semantic": {
+            "keywords": [
+              "paragraph"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.9
+          }
+        },
+        {
+          "id": "block_3",
+          "type": "paragraph",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 20.0,
+            "page": 1
+          },
+          "content": {
+            "text": "\t노황변동시 복구를 위한 수순 및 기준에 대한 정확한 이해를 토대로 고로 노황을 안정된 상태로 지속 유지하기 위함이다. "
+          },
+          "semantic": {
+            "keywords": [
+              "paragraph"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.9
+          }
+        },
+        {
+          "id": "block_4",
+          "type": "paragraph",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 20.0,
+            "page": 1
+          },
+          "content": {
+            "text": "3. 중점관리항목"
+          },
+          "semantic": {
+            "keywords": [
+              "paragraph"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.9
+          }
+        },
+        {
+          "id": "block_5",
+          "type": "paragraph",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 20.0,
+            "page": 1
+          },
+          "content": {
+            "text": "4. 조업기준"
+          },
+          "semantic": {
+            "keywords": [
+              "paragraph"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.9
+          }
+        },
+        {
+          "id": "block_6",
+          "type": "paragraph",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 20.0,
+            "page": 1
+          },
+          "content": {
+            "text": "4.1 노황변동의 의미"
+          },
+          "semantic": {
+            "keywords": [
+              "paragraph"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.9
+          }
+        },
+        {
+          "id": "block_7",
+          "type": "paragraph",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 20.0,
+            "page": 1
+          },
+          "content": {
+            "text": "\t고로내 GAS 통기성 불량으로 날바람, 미끄러짐(SLIP), 정일로 걸림(HANGING) 등이 발생하며, 이로 인해 노내에서 고체 및 용융상태의 GAS간의 원활한 유동발생 불통현상으로 노압이 저하하고, 더욱 악화되면 그 부위까지 연결되는 상황을 말한다."
+          },
+          "semantic": {
+            "keywords": [
+              "paragraph"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.9
+          }
+        },
+        {
+          "id": "block_8",
+          "type": "paragraph",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 20.0,
+            "page": 1
+          },
+          "content": {
+            "text": "4.2 노황복구 수순"
+          },
+          "semantic": {
+            "keywords": [
+              "paragraph"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.9
+          }
+        },
+        {
+          "id": "block_9",
+          "type": "paragraph",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 20.0,
+            "page": 1
+          },
+          "content": {
+            "text": "4.2.1 노열확보"
+          },
+          "semantic": {
+            "keywords": [
+              "paragraph"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.9
+          }
+        },
+        {
+          "id": "block_10",
+          "type": "paragraph",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 20.0,
+            "page": 1
+          },
+          "content": {
+            "text": "노황부조시는 대부분 노내통기성 악화 및 노열급저하에 의해 용융물배출이 어렵고, 유동성이 나쁜 저온의 SLAG에 의해 노저부(노심 Coke)오염의 우려가 있으므로, 우선적으로 노내온도를 높여 용융물 배출을 도모해야 한다.."
+          },
+          "semantic": {
+            "keywords": [
+              "paragraph"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.9
+          }
+        },
+        {
+          "id": "block_11",
+          "type": "paragraph",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 20.0,
+            "page": 1
+          },
+          "content": {
+            "text": "노열확보의 방안으로 우선 BLANK COKE 장입 및 O/C감광을 실시하여 노내의 높은 O/C를 치환하여야 한다."
+          },
+          "semantic": {
+            "keywords": [
+              "paragraph"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.9
+          }
+        },
+        {
+          "id": "block_12",
+          "type": "paragraph",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 20.0,
+            "page": 1
+          },
+          "content": {
+            "text": "감광한 O/C가 풍구 레벨에 도달하기 위해서는 정상조업시보다 2~3배의 Traveling Time (8시간 이상)이 소요되므로 당장의 노열회복에는 도움이 되지 못한다."
+          },
+          "semantic": {
+            "keywords": [
+              "paragraph"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.9
+          }
+        },
+        {
+          "id": "block_13",
+          "type": "paragraph",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 20.0,
+            "page": 1
+          },
+          "content": {
+            "text": "따라서 ①최대 풍온 사용 (열풍로 설비조건 고려), 최저 조습사용 (대시조습), PCR 증대 등으로 추가 노열을 부여하고,"
+          },
+          "semantic": {
+            "keywords": [
+              "paragraph"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "table_section_0",
+      "path": [
+        "root",
+        "table_0"
+      ],
+      "heading": "Table 1",
+      "level": 2,
+      "blocks": [
+        {
+          "id": "table_0",
+          "type": "table",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 50.0,
+            "page": 1
+          },
+          "content": {
+            "text": "Table with 1 rows",
+            "table_data": [
+              [
+                "작성자",
+                "진 다 훈"
+              ]
+            ]
+          },
+          "semantic": {
+            "keywords": [
+              "table"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.95
+          }
+        }
+      ]
+    },
+    {
+      "id": "table_section_1",
+      "path": [
+        "root",
+        "table_1"
+      ],
+      "heading": "Table 2",
+      "level": 2,
+      "blocks": [
+        {
+          "id": "table_1",
+          "type": "table",
+          "page": 1,
+          "bbox": {
+            "x1": 0.0,
+            "y1": 0.0,
+            "x2": 100.0,
+            "y2": 50.0,
+            "page": 1
+          },
+          "content": {
+            "text": "Table with 2 rows",
+            "table_data": [
+              [
+                "품질영향 인자",
+                "공정영향 인자"
+              ],
+              [
+                "[Si] [S]",
+                "풍압, 노열"
+              ]
+            ]
+          },
+          "semantic": {
+            "keywords": [
+              "table"
+            ],
+            "entities": [],
+            "cross_refs": [],
+            "topics": [],
+            "confidence": 0.95
+          }
+        }
+      ]
+    }
+  ],
+  "embeddings_info": null
+}

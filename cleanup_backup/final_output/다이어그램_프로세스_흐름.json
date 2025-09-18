@@ -1,0 +1,41 @@
+{
+  "document_analysis": {
+    "process_flows": [
+      {
+        "name": "노황복구 수순",
+        "type": "sequential",
+        "confidence": 0.65,
+        "steps": [
+          {
+            "sequence": 1,
+            "marker": "①",
+            "title": "노열확보",
+            "details": []
+          },
+          {
+            "sequence": 2,
+            "marker": "②",
+            "title": "통기성 확보",
+            "details": []
+          },
+          {
+            "sequence": 4,
+            "marker": "④",
+            "title": "조업도 상승",
+            "details": []
+          }
+        ]
+      }
+    ],
+    "recognition_score": 90.9090909090909,
+    "processing_time": 0.026426076889038086
+  },
+  "parsing_info": {
+    "parser_version": "2.0 with DiagramFlowAnalyzer",
+    "features": [
+      "process_flow_extraction",
+      "sequence_detection",
+      "marker_recognition"
+    ]
+  }
+}

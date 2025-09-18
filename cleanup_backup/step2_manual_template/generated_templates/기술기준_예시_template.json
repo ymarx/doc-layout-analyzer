@@ -1,0 +1,337 @@
+{
+  "id": "b621fdb2-1770-4d13-9208-415ac550e671",
+  "name": "기술기준_예시_template",
+  "description": "기술기준_예시에서 자동 생성된 템플릿",
+  "document_type": "기술기준",
+  "fields": [
+    {
+      "id": "0c9542e3-5ec5-4a2a-8f31-1275b5308e0c",
+      "name": "title",
+      "field_type": "text",
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      },
+      "importance": "critical",
+      "description": "자동 감지된 title",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 1.0,
+        "extraction_method": "auto",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.968903"
+    },
+    {
+      "id": "7d52a0bf-2ce1-4fed-9610-f64423ca044b",
+      "name": "section_1_scope",
+      "field_type": "text",
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      },
+      "importance": "medium",
+      "description": "자동 감지된 section_1_scope",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 1.0,
+        "extraction_method": "auto",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.968930"
+    },
+    {
+      "id": "27888d48-554d-42bc-9983-a8de1bb1006f",
+      "name": "section_2_purpose",
+      "field_type": "text",
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      },
+      "importance": "medium",
+      "description": "자동 감지된 section_2_purpose",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 1.0,
+        "extraction_method": "auto",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.968947"
+    },
+    {
+      "id": "c5198d04-da51-4006-9221-42c41f284220",
+      "name": "section_3_management",
+      "field_type": "text",
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      },
+      "importance": "medium",
+      "description": "자동 감지된 section_3_management",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 1.0,
+        "extraction_method": "auto",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.968963"
+    },
+    {
+      "id": "5f99a276-8917-433c-92d3-2cd39bee88da",
+      "name": "section_4_standards",
+      "field_type": "title",
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      },
+      "importance": "medium",
+      "description": "자동 감지된 section_4_standards",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 1.0,
+        "extraction_method": "auto",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.968978"
+    },
+    {
+      "id": "a230819e-a97a-409c-b5cf-77428667bcc1",
+      "name": "section_4_1_meaning",
+      "field_type": "text",
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      },
+      "importance": "medium",
+      "description": "자동 감지된 section_4_1_meaning",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 1.0,
+        "extraction_method": "auto",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.968993"
+    },
+    {
+      "id": "b2b5110f-9c50-40f6-afe3-4f41f8a167f5",
+      "name": "section_4_2_recovery",
+      "field_type": "text",
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      },
+      "importance": "medium",
+      "description": "자동 감지된 section_4_2_recovery",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 1.0,
+        "extraction_method": "auto",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.969008"
+    },
+    {
+      "id": "58e627bf-30b2-4330-9ed3-cca040602e59",
+      "name": "section_4_2_1_heat_securing",
+      "field_type": "text",
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      },
+      "importance": "medium",
+      "description": "자동 감지된 section_4_2_1_heat_securing",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 1.0,
+        "extraction_method": "auto",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.969023"
+    },
+    {
+      "id": "083a8d09-3c78-4f89-aa19-815190b28900",
+      "name": "technical_keywords",
+      "field_type": "text",
+      "bbox": null,
+      "importance": "medium",
+      "description": "자동 감지된 technical_keywords",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 1.0,
+        "extraction_method": "auto",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.969036"
+    },
+    {
+      "id": "195cc5c3-e656-4511-956c-29a436680d0a",
+      "name": "document_number",
+      "field_type": "code",
+      "bbox": null,
+      "importance": "critical",
+      "description": "자동 감지된 document_number",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 0.95,
+        "extraction_method": "docjson_metadata",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.969050"
+    },
+    {
+      "id": "a07c5260-b570-4685-af3e-7bed9c1f5447",
+      "name": "effective_date",
+      "field_type": "date",
+      "bbox": null,
+      "importance": "critical",
+      "description": "자동 감지된 effective_date",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 0.95,
+        "extraction_method": "docjson_metadata",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.969062"
+    },
+    {
+      "id": "3f35fbd6-d2c3-40fe-b483-b60e3c0531c8",
+      "name": "author",
+      "field_type": "text",
+      "bbox": null,
+      "importance": "medium",
+      "description": "자동 감지된 author",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 0.95,
+        "extraction_method": "docjson_metadata",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.969075"
+    },
+    {
+      "id": "5901aa0e-d8e3-4408-89f1-6f83e87f8ed3",
+      "name": "revision",
+      "field_type": "text",
+      "bbox": null,
+      "importance": "high",
+      "description": "자동 감지된 revision",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 0.95,
+        "extraction_method": "docjson_metadata",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.969089"
+    },
+    {
+      "id": "c3ad04e6-09c7-44ec-92d7-926962cf396d",
+      "name": "process_flow_step_1",
+      "field_type": "text",
+      "bbox": {
+        "x1": 0.0,
+        "y1": 0.0,
+        "x2": 100.0,
+        "y2": 20.0,
+        "page": 1
+      },
+      "importance": "medium",
+      "description": "자동 감지된 process_flow_step_1",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 0.9,
+        "extraction_method": "process_flow",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.969104"
+    },
+    {
+      "id": "adfcebbf-c7ca-485c-a57a-8e244086312d",
+      "name": "process_flow_step_2",
+      "field_type": "text",
+      "bbox": null,
+      "importance": "medium",
+      "description": "자동 감지된 process_flow_step_2",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 0.9,
+        "extraction_method": "process_flow",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.969117"
+    },
+    {
+      "id": "97dd7c54-d76f-4cd6-931c-dc72862ff1e8",
+      "name": "process_flow_step_3",
+      "field_type": "text",
+      "bbox": null,
+      "importance": "medium",
+      "description": "자동 감지된 process_flow_step_3",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 0.9,
+        "extraction_method": "process_flow",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.969130"
+    },
+    {
+      "id": "27f5c6ca-a764-4af4-b8f5-2ab3ef1df196",
+      "name": "process_flow_step_4",
+      "field_type": "text",
+      "bbox": null,
+      "importance": "medium",
+      "description": "자동 감지된 process_flow_step_4",
+      "validation_rules": {},
+      "relationships": [],
+      "metadata": {
+        "confidence": 0.9,
+        "extraction_method": "process_flow",
+        "template_id": "technical_standard_v2_improved"
+      },
+      "created_at": "2025-09-17T17:45:46.969143"
+    }
+  ],
+  "validation_rules": {},
+  "created_at": "2025-09-17T17:45:46.969157",
+  "updated_at": "2025-09-17T17:45:46.969159"
+}

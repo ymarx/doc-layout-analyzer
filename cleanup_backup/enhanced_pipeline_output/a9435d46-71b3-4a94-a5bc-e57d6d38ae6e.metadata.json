@@ -1,0 +1,20 @@
+{
+  "document_id": "a9435d46-71b3-4a94-a5bc-e57d6d38ae6e",
+  "processing_level": "complete",
+  "processing_time": 0.0,
+  "stages_completed": [
+    "parsing"
+  ],
+  "confidence_scores": {
+    "parsing": 0.95
+  },
+  "quality_score": null,
+  "preset_used": {
+    "description": "완전 처리 - 모든 기능 활성화 (벡터화 포함)",
+    "template_matching": true,
+    "auto_annotations": true,
+    "vectorization": true
+  },
+  "timestamp": "2025-09-17T17:19:47.930476",
+  "pipeline_version": "2.0"
+}

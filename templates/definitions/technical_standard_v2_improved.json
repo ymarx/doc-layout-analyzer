@@ -1,0 +1,289 @@
+{
+  "template_id": "technical_standard_v2_improved",
+  "name": "기술기준서 개선판",
+  "description": "실제 문서 분석을 바탕으로 개선된 제철소 기술기준서 템플릿",
+  "document_type": "docx",
+  "version": "2.0",
+  "elements": [
+    {
+      "name": "document_number",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        "TP-030-030-050",
+        "TP-\\d{3}-\\d{3}-\\d{3}",
+        "[A-Z]{2,4}-\\d{3}-\\d{3}-\\d{3}",
+        "문서번호[:\\s]*([A-Z0-9-]+)",
+        "(?:문서|Document)\\s*(?:번호|No)[:\\s]*([A-Z0-9-]+)"
+      ],
+      "required": true,
+      "confidence_threshold": 0.95,
+      "alternatives": [
+        "기술기준.*([A-Z0-9-]{10,})",
+        "표준.*번호[:\\s]*([A-Z0-9-]+)"
+      ]
+    },
+    {
+      "name": "effective_date",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        "25\\.07\\.28",
+        "\\d{2}\\.\\d{2}\\.\\d{2}",
+        "\\d{4}-\\d{2}-\\d{2}",
+        "시행일[:\\s]*(\\d{2}\\.\\d{2}\\.\\d{2})",
+        "효력발생일[:\\s]*(\\d{2}\\.\\d{2}\\.\\d{2})",
+        "적용일자[:\\s]*(\\d{2}\\.\\d{2}\\.\\d{2})"
+      ],
+      "required": true,
+      "confidence_threshold": 0.9
+    },
+    {
+      "name": "revision",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        "Rev\\.?\\s*10",
+        "Rev\\.?\\s*(\\d+)",
+        "개정[:\\s]*(\\d+)",
+        "버전[:\\s]*V?\\.?(\\d+)",
+        "리비전[:\\s]*(\\d+)"
+      ],
+      "required": false,
+      "confidence_threshold": 0.8
+    },
+    {
+      "name": "author",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        "진\\s*다\\s*훈",
+        "작성자[:\\s]*([가-힣\\s]{2,10})",
+        "작성[:\\s]*([가-힣\\s]{2,10})",
+        "기안자[:\\s]*([가-힣\\s]{2,10})",
+        "담당자[:\\s]*([가-힣\\s]{2,10})"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7
+    },
+    {
+      "name": "title",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        "노황변동.*조치.*기준",
+        "고로조업.*통기성.*불량.*조치.*기준",
+        "([가-힣\\s]*(?:기준|표준|절차|지침)[가-힣\\s]*)",
+        "제목[:\\s]*([가-힣\\s()]+)",
+        "^\\s*([가-힣\\s()]{5,50}(?:기준|표준|절차|지침))"
+      ],
+      "required": true,
+      "confidence_threshold": 0.8
+    },
+    {
+      "name": "department",
+      "element_type": "fixed",
+      "extraction_method": "regex",
+      "patterns": [
+        "제선부",
+        "고로공정",
+        "부서[:\\s]*([가-힣]{2,10})",
+        "소속[:\\s]*([가-힣]{2,10})",
+        "담당부서[:\\s]*([가-힣]{2,10})"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7
+    },
+    {
+      "name": "section_1_scope",
+      "element_type": "structural",
+      "extraction_method": "pattern",
+      "patterns": [
+        "1\\.\\s*적용범위",
+        "1\\.\\s*적용\\s*범위",
+        "적용범위"
+      ],
+      "required": true,
+      "confidence_threshold": 0.9
+    },
+    {
+      "name": "section_2_purpose",
+      "element_type": "structural",
+      "extraction_method": "pattern",
+      "patterns": [
+        "2\\.\\s*목\\s*적",
+        "2\\.\\s*목적",
+        "목적"
+      ],
+      "required": true,
+      "confidence_threshold": 0.9
+    },
+    {
+      "name": "section_3_management",
+      "element_type": "structural",
+      "extraction_method": "pattern",
+      "patterns": [
+        "3\\.\\s*중점관리항목",
+        "3\\.\\s*중점\\s*관리\\s*항목",
+        "중점관리항목"
+      ],
+      "required": true,
+      "confidence_threshold": 0.8
+    },
+    {
+      "name": "section_4_standards",
+      "element_type": "structural",
+      "extraction_method": "pattern",
+      "patterns": [
+        "4\\.\\s*조업기준",
+        "4\\.\\s*조업\\s*기준",
+        "조업기준"
+      ],
+      "required": true,
+      "confidence_threshold": 0.9
+    },
+    {
+      "name": "section_4_1_meaning",
+      "element_type": "structural",
+      "extraction_method": "pattern",
+      "patterns": [
+        "4\\.1\\s*노황변동의\\s*의미",
+        "4\\.1\\s*노황변동.*의미",
+        "노황변동.*의미"
+      ],
+      "required": false,
+      "confidence_threshold": 0.8
+    },
+    {
+      "name": "section_4_2_recovery",
+      "element_type": "structural",
+      "extraction_method": "pattern",
+      "patterns": [
+        "4\\.2\\s*노황복구\\s*수순",
+        "4\\.2\\s*노황복구.*수순",
+        "노황복구.*수순"
+      ],
+      "required": false,
+      "confidence_threshold": 0.8
+    },
+    {
+      "name": "section_4_2_1_heat_securing",
+      "element_type": "structural",
+      "extraction_method": "pattern",
+      "patterns": [
+        "4\\.2\\.1\\s*노열확보",
+        "4\\.2\\.1\\s*노열\\s*확보",
+        "노열확보"
+      ],
+      "required": false,
+      "confidence_threshold": 0.8
+    },
+    {
+      "name": "process_flow_step_1",
+      "element_type": "diagram",
+      "extraction_method": "pattern",
+      "patterns": [
+        "①.*노열확보",
+        "1\\s*단계.*노열",
+        "첫.*번째.*노열"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7
+    },
+    {
+      "name": "process_flow_step_2",
+      "element_type": "diagram",
+      "extraction_method": "pattern",
+      "patterns": [
+        "②.*통기성.*확보",
+        "2\\s*단계.*통기성",
+        "두.*번째.*통기성"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7
+    },
+    {
+      "name": "process_flow_step_3",
+      "element_type": "diagram",
+      "extraction_method": "pattern",
+      "patterns": [
+        "③.*풍량확보.*연화융착대형성",
+        "3\\s*단계.*풍량",
+        "세.*번째.*풍량"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7
+    },
+    {
+      "name": "process_flow_step_4",
+      "element_type": "diagram",
+      "extraction_method": "pattern",
+      "patterns": [
+        "④.*조업도.*상승",
+        "4\\s*단계.*조업도",
+        "네.*번째.*조업도",
+        "증광.*증산"
+      ],
+      "required": false,
+      "confidence_threshold": 0.7
+    },
+    {
+      "name": "technical_keywords",
+      "element_type": "content",
+      "extraction_method": "pattern",
+      "patterns": [
+        "고로조업",
+        "통기성.*불량",
+        "노황변동",
+        "날바람.*Channeling",
+        "장입물.*오장입",
+        "GAS.*통기성",
+        "SLIP.*정일로.*걸림.*HANGING"
+      ],
+      "required": false,
+      "confidence_threshold": 0.6
+    }
+  ],
+  "hierarchy_patterns": {
+    "level_1": "^\\d+\\.\\s+(.+)",
+    "level_2": "^\\d+\\.\\d+\\s+(.+)",
+    "level_3": "^\\d+\\.\\d+\\.\\d+\\s+(.+)"
+  },
+  "metadata_mapping": {
+    "title": "제목",
+    "department": "부서",
+    "process": "공정",
+    "document_category": "기술기준"
+  },
+  "validation_rules": {
+    "document_number": {
+      "format": "TP-XXX-XXX-XXX",
+      "required": true
+    },
+    "effective_date": {
+      "format": "YY.MM.DD",
+      "required": true
+    },
+    "section_count": {
+      "minimum": 4,
+      "expected": [1, 2, 3, 4]
+    }
+  },
+  "position_hints": {
+    "document_number": {
+      "typical_location": "header",
+      "y_range": [0, 150],
+      "x_range": [300, 700]
+    },
+    "title": {
+      "typical_location": "top_center",
+      "y_range": [100, 300],
+      "x_range": [100, 600]
+    },
+    "author": {
+      "typical_location": "bottom_right",
+      "y_range": [600, 800],
+      "x_range": [400, 600]
+    }
+  }
+}

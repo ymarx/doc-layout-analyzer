@@ -1,0 +1,20 @@
+{
+  "document_id": "2e228186-83d0-4f48-97f0-99151709e7c1",
+  "processing_level": "basic",
+  "processing_time": 0.0,
+  "stages_completed": [
+    "parsing"
+  ],
+  "confidence_scores": {
+    "parsing": 0.95
+  },
+  "quality_score": null,
+  "preset_used": {
+    "description": "빠른 기본 처리 - 텍스트와 표만 추출",
+    "template_matching": false,
+    "auto_annotations": false,
+    "vectorization": false
+  },
+  "timestamp": "2025-09-17T15:52:51.422278",
+  "pipeline_version": "2.0"
+}

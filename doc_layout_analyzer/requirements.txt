@@ -1,0 +1,51 @@
+# Document Layout Analyzer Dependencies
+# 기본 필수 라이브러리만 포함 (선택적 라이브러리는 별도 설치)
+
+# Core Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
+
+# Configuration & Utilities
+pyyaml==6.0.1
+python-dotenv==1.0.0
+click==8.1.7
+tqdm==4.66.1
+
+# Document Processing (필수)
+python-docx==1.1.0
+python-pptx==0.6.23
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+openpyxl==3.1.2
+
+# Image Processing (필수)
+Pillow==10.1.0
+numpy==1.24.4
+
+# Data Processing (필수)
+pandas==2.1.4
+pyarrow==14.0.1
+
+# HTTP & Async
+httpx==0.25.2
+aiofiles==23.2.1
+aiohttp==3.9.1
+
+# JSON Schema
+jsonschema==4.19.2
+
+# System Monitoring
+psutil==5.9.6
+
+# PyMuPDF for PDF processing
+PyMuPDF==1.24.0
+
+# 선택적 고급 기능을 위한 추가 라이브러리:
+# pip install -r requirements-optional.txt
+
+# 시스템 의존성 (수동 설치 필요):
+# macOS: brew install libreoffice tesseract tesseract-lang
+# Ubuntu/Debian: sudo apt-get install libreoffice tesseract-ocr tesseract-ocr-kor
+# Windows: https://libreoffice.org + https://github.com/UB-Mannheim/tesseract/wiki

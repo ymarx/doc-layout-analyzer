@@ -1,0 +1,40 @@
+{
+  "document_number": "TP-030-030-050",
+  "title": "고로조업에서 통기성 불량으로 인한 노황변동, 날바람(吹拔 : Channeling)과 장입물 오장입시의 조치 기준에 대하여 적용한다.",
+  "author": "진 다 훈",
+  "effective_date": "25.07.28",
+  "revision": "10",
+  "sections": [
+    {
+      "number": "4.1",
+      "title": "노황변동의 의미",
+      "level": 2,
+      "full_text": "4.1 노황변동의 의미"
+    },
+    {
+      "number": "4.2",
+      "title": "노황복구 수순",
+      "level": 2,
+      "full_text": "4.2 노황복구 수순"
+    },
+    {
+      "number": "4.2.1",
+      "title": "노열확보",
+      "level": 3,
+      "full_text": "4.2.1 노열확보"
+    }
+  ],
+  "patterns_found": {
+    "document_number": "TP-030-030-050",
+    "revision": "10",
+    "effective_date": "25.07.28"
+  },
+  "metadata": {
+    "author_from_xml": "진 다 훈",
+    "total_sections": 3,
+    "total_tables": 2,
+    "total_diagrams": 7,
+    "patterns_detected": 3
+  },
+  "recognition_score": 90.9090909090909
+}

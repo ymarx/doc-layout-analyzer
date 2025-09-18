@@ -1,0 +1,107 @@
+{
+  "parsing_summary": {
+    "success": true,
+    "processing_time": 0.03338885307312012,
+    "template_id": "technical_standard_v1",
+    "template_confidence": 0.12962962962962962
+  },
+  "template_extracted": {},
+  "rag_analysis": {
+    "total_chunks": 16,
+    "chunk_types": {
+      "metadata": 1,
+      "header": 6,
+      "content": 7,
+      "table": 2
+    },
+    "vector_documents_count": 16
+  },
+  "sample_chunks": [
+    {
+      "id": "doc_기술기준_예시_metadata",
+      "type": "metadata",
+      "text": "문서제목: 고로조업에서 통기성 불량으로 인한 노황변동, 날바람(吹拔 : Channeling)과 장입물 오장입시의 조치 기준에 대하여 적용한다.",
+      "keywords": [
+        "불량으로",
+        "장입물",
+        "조치",
+        "고로조업에서",
+        "오장입시의",
+        "적용한다",
+        "날바람",
+        "대하여",
+        "Channeling",
+        "기준에",
+        "노황변동",
+        "인한",
+        "통기성"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "id": "doc_기술기준_예시_section_1_header",
+      "type": "header",
+      "text": "Document Content",
+      "keywords": [
+        "Document",
+        "Content"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "doc_기술기준_예시_section_1_block_1",
+      "type": "content",
+      "text": "고로조업에서 통기성 불량으로 인한 노황변동, 날바람(吹拔 : Channeling)과 장입물 오장입시의 조치 기준에 대하여 적용한다.",
+      "keywords": [
+        "불량으로",
+        "장입물",
+        "조치",
+        "고로조업에서",
+        "오장입시의",
+        "적용한다",
+        "날바람",
+        "대하여",
+        "Channeling",
+        "기준에",
+        "노황변동",
+        "인한",
+        "통기성"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "id": "doc_기술기준_예시_section_1_block_3",
+      "type": "content",
+      "text": "노황변동시 복구를 위한 수순 및 기준에 대한 정확한 이해를 토대로 고로 노황을 안정된 상태로 지속 유지하기 위함이다.",
+      "keywords": [
+        "위함이다",
+        "수순",
+        "이해를",
+        "토대로",
+        "유지하기",
+        "복구를",
+        "노황을",
+        "노황변동시",
+        "안정된",
+        "위한",
+        "대한",
+        "정확한",
+        "기준에",
+        "고로",
+        "상태로",
+        "지속"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "id": "doc_기술기준_예시_section_1_block_6",
+      "type": "header",
+      "text": "4.1 노황변동의 의미",
+      "keywords": [
+        "의미",
+        "노황변동의"
+      ],
+      "confidence": 0.8
+    }
+  ]
+}

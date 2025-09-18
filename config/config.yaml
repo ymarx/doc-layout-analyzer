@@ -1,0 +1,140 @@
+# Document Layout Analyzer Configuration
+# CPU를 기본으로 하고 GPU를 선택적으로 사용하는 설정
+
+# 시스템 설정
+system:
+  # 처리 모드: "cpu", "gpu", "auto"
+  processing_mode: "cpu"
+
+  # CPU 설정
+  cpu:
+    max_workers: 8
+    chunk_size: 1024
+    memory_limit: "8GB"
+    use_multiprocessing: true
+
+  # GPU 설정 (선택사항)
+  gpu:
+    enabled: false
+    device_ids: [0]
+    batch_size: 32
+    memory_fraction: 0.8
+    fallback_to_cpu: true
+
+  # 일반 설정
+  temp_dir: "./data/temp"
+  log_level: "INFO"
+  max_file_size: "100MB"
+
+# OCR 및 레이아웃 분석 설정
+ocr:
+  # Primary OCR: PaddleOCR (CPU/GPU 모두 지원)
+  paddleocr:
+    use_gpu: false  # CPU 기본값
+    lang: ["ko", "en"]
+    det_model: "ch_PP-OCRv4_det"
+    rec_model: "ch_PP-OCRv4_rec"
+    cls_model: "ch_ppocr_mobile_v2.0_cls"
+
+  # Layout Analysis
+  layout_analysis:
+    # Primary: PP-Structure (CPU 최적화)
+    pp_structure:
+      use_gpu: false
+      table_algorithm: "TableMaster"
+      layout_algorithm: "PicoDetLayoutAnalysis"
+
+    # Backup: Docling (CPU only)
+    docling:
+      enabled: true
+      timeout: 30
+
+# 문서 파싱 설정
+parsers:
+  # Office 문서
+  office:
+    libreoffice_path: "/usr/bin/libreoffice"
+    timeout: 60
+
+  # PDF 처리
+  pdf:
+    use_ocrmypdf: true
+    deskew: true
+    clean: true
+
+  # 이미지 처리
+  image:
+    resize_max: 2048
+    quality: 95
+
+# 임베딩 설정
+embeddings:
+  # Text Embedding: BGE-M3 (CPU 최적화)
+  text:
+    model: "BAAI/bge-m3"
+    device: "cpu"  # CPU 기본값
+    max_length: 512
+    normalize: true
+    batch_size: 16
+
+  # Reranking
+  reranker:
+    model: "BAAI/bge-reranker-v2-m3"
+    device: "cpu"
+    batch_size: 8
+
+# 벡터 데이터베이스 설정
+vector_db:
+  qdrant:
+    host: "localhost"
+    port: 6333
+    collection_name: "documents"
+    vector_size: 1024
+    distance: "Cosine"
+
+    # 성능 최적화
+    quantization:
+      enabled: true
+      type: "int8"
+
+    indexing:
+      payload_fields: ["doc_type", "block_type", "lang", "effective_date"]
+
+# API 설정
+api:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 4
+  reload: false
+
+  # Rate limiting
+  rate_limit:
+    requests_per_minute: 100
+    burst_size: 20
+
+# 로깅 설정
+logging:
+  version: 1
+  disable_existing_loggers: false
+
+  formatters:
+    default:
+      format: "[%(asctime)s] %(levelname)s in %(module)s: %(message)s"
+
+  handlers:
+    console:
+      class: logging.StreamHandler
+      formatter: default
+      level: INFO
+
+    file:
+      class: logging.handlers.RotatingFileHandler
+      filename: logs/app.log
+      maxBytes: 10485760  # 10MB
+      backupCount: 5
+      formatter: default
+      level: DEBUG
+
+  root:
+    level: INFO
+    handlers: [console, file]
