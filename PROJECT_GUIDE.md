@@ -73,6 +73,14 @@ graph TD
 ### 📁 디렉토리 구조
 ```
 doc_layout_analyzer/
+├── 📄 README.md                      # 메인 시작점 (한국어)
+├── 📄 PROJECT_GUIDE.md               # 이 문서 - 종합 가이드
+├── 📂 docs/                          # 상세 문서
+│   ├── USER_MANUAL.md                # 사용자 매뉴얼
+│   ├── USAGE_GUIDE.md                # 기술 구현 가이드
+│   ├── SYSTEM_SUMMARY.md             # 시스템 요약 및 성능
+│   ├── HYBRID_SYSTEM_GUIDE.md        # 하이브리드 처리 가이드
+│   └── ANNOTATION_GUIDE.md           # Annotation 시스템 가이드
 ├── 📂 src/                           # 핵심 소스 코드
 │   ├── core/                         # 핵심 엔진
 │   │   ├── enhanced_modernized_pipeline.py   # 메인 파이프라인
@@ -81,19 +89,15 @@ doc_layout_analyzer/
 │   │   └── simplified_config.py             # 설정 관리
 │   ├── parsers/                      # 파서 모듈
 │   │   ├── unified_docx_parser.py           # DOCX 파서
+│   │   ├── pdf_parser.py                    # PDF 파서
 │   │   └── document_analyzer.py             # 문서 분석기
-│   └── utils/                        # 유틸리티
-│       ├── docjson_utils.py                 # DocJSON 유틸
-│       └── diagram_flow_analyzer.py         # 다이어그램 분석
+│   └── templates/                    # 템플릿 모듈
+│       └── document_template.py             # 템플릿 정의
 ├── 📂 templates/                     # 템플릿 라이브러리
 │   └── definitions/                  # JSON 템플릿 저장소
-├── 📂 annotations/                   # Annotation 데이터
-├── 📂 step1_analysis/                # 1단계 출력
-├── 📂 step2_template_test/           # 2단계 출력
-├── 📂 step3_annotation/              # 3단계 출력
-├── 📂 step3_annotations/             # Annotation 저장소
-├── 📂 step4_template_creation/       # 4단계 출력
-├── 📂 step5_final_parsing/           # 최종 파싱 결과 ⭐
+├── 📂 config/                        # 설정 파일
+│   └── config.yaml                   # 시스템 설정
+├── 📂 step*_*/                       # 단계별 출력 폴더
 ├── 🐍 step1_document_registration.py # 1단계: 문서 등재
 ├── 🐍 step2_template_selection.py    # 2단계: 템플릿 선택
 ├── 🐍 step3_annotation.py            # 3단계: Annotation
@@ -302,6 +306,31 @@ pip install python-docx==0.8.11
 ---
 
 ## 🎯 4. 5단계 워크플로우 상세 가이드
+
+### 🔄 다중 처리 파이프라인
+
+| 파이프라인 | 사용법 | 최적 용도 | 특징 |
+|------------|--------|----------|------|
+| **🔧 Step1-5 워크플로우** | `python complete_workflow.py` | 구조화된 문서, 표준 양식 | 템플릿 기반, 96.5% 정확도 |
+| **⚡ 간단 하이브리드** | `python simple_hybrid_usage.py doc.docx` | 빠른 처리, 간단한 문서 | 빠른 속도, 간편 사용 |
+| **📘 강화 파이프라인** | `python enhanced_main.py` | 복잡한 문서, PDF 처리 | DOCX/PDF 지원, 고급 기능 |
+| **🔍 레거시** | `python main.py` | 테스트, 호환성 | 기본 처리, 레거시 지원 |
+
+### 📑 문서 참조 가이드
+
+#### 사용 목적별 문서 선택
+
+| 목적 | 참조할 문서 | 설명 |
+|------|-------------|------|
+| **처음 시작** | README.md → PROJECT_GUIDE.md | 시스템 개요 파악 |
+| **DOCX 처리** | docs/USER_MANUAL.md | Step1-5 워크플로우 상세 |
+| **PDF 처리** | enhanced_main.py + src/parsers/pdf_parser.py | PDF 파싱 기능 |
+| **빠른 처리** | simple_hybrid_usage.py | 간단 하이브리드 모드 |
+| **고급 기능** | docs/HYBRID_SYSTEM_GUIDE.md | 템플릿 + 패턴 인식 |
+| **Annotation** | docs/ANNOTATION_GUIDE.md | 필드 관리 시스템 |
+| **설치/설정** | install.sh + config/config.yaml | 환경 구성 |
+| **성능 지표** | docs/SYSTEM_SUMMARY.md | 정확도 및 성능 데이터 |
+| **기술 구현** | docs/USAGE_GUIDE.md | 상세 기술 가이드 |
 
 ### 🚀 빠른 시작
 ```bash
