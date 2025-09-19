@@ -1,0 +1,136 @@
+# Cross-Platform Requirements for Document Layout Analyzer
+# Python 3.11+ required
+# This file contains platform-agnostic dependencies
+# GPU/CPU specific packages will be installed separately based on system detection
+
+# ==============================================================================
+# Core Framework (Platform Independent)
+# ==============================================================================
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
+
+# ==============================================================================
+# Configuration & Utilities (Platform Independent)
+# ==============================================================================
+pyyaml==6.0.1
+python-dotenv==1.0.0
+click==8.1.7
+tqdm==4.66.1
+loguru==0.7.2
+
+# ==============================================================================
+# Document Processing (Platform Independent)
+# ==============================================================================
+python-docx==1.1.0
+python-pptx==0.6.23
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+openpyxl==3.1.2
+
+# ==============================================================================
+# Image Processing (Platform Independent)
+# ==============================================================================
+opencv-python==4.8.1.78
+Pillow==10.1.0
+scikit-image==0.22.0
+numpy==1.24.4
+
+# ==============================================================================
+# OCR Libraries (Platform Independent Base)
+# ==============================================================================
+pytesseract==0.3.10
+easyocr==1.7.0
+
+# ==============================================================================
+# Text Processing (Platform Independent)
+# ==============================================================================
+spacy==3.7.2
+kiwisolver==1.4.5
+
+# ==============================================================================
+# Data Processing (Platform Independent)
+# ==============================================================================
+pandas==2.1.4
+pyarrow==14.0.1
+
+# ==============================================================================
+# HTTP & Async (Platform Independent)
+# ==============================================================================
+httpx==0.25.2
+aiofiles==23.2.1
+aiohttp==3.9.1
+
+# ==============================================================================
+# System Monitoring (Platform Independent)
+# ==============================================================================
+psutil==5.9.6
+py-cpuinfo==9.0.0
+
+# ==============================================================================
+# Vector Database (Platform Independent)
+# ==============================================================================
+qdrant-client==1.7.0
+chromadb==0.4.18
+
+# ==============================================================================
+# ML & AI Base Libraries (Platform Independent)
+# ==============================================================================
+sentence-transformers==2.2.2
+transformers==4.36.0
+
+# ==============================================================================
+# Development & Testing (Platform Independent)
+# ==============================================================================
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+
+# ==============================================================================
+# Optional Libraries (Install separately if needed)
+# ==============================================================================
+# These require additional system dependencies:
+# camelot-py[cv]==0.10.1  # Requires: Ghostscript, tkinter
+# tabula-py==2.9.0        # Requires: Java
+# konlpy==0.6.0           # Requires: Java, Korean NLP
+
+# ==============================================================================
+# Platform-Specific Packages (DO NOT INCLUDE HERE)
+# ==============================================================================
+# The following packages will be installed by detect_gpu.py based on system:
+#
+# For NVIDIA GPU (CUDA):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+#   pip install paddlepaddle-gpu==2.5.2
+#   pip install onnxruntime-gpu==1.16.3
+#
+# For Apple Silicon (MPS):
+#   pip install torch torchvision
+#   pip install paddlepaddle==2.5.2
+#   pip install onnxruntime==1.16.3
+#
+# For AMD GPU (ROCm):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/rocm5.6
+#   pip install paddlepaddle==2.5.2
+#   pip install onnxruntime==1.16.3
+#
+# For CPU only:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#   pip install paddlepaddle==2.5.2
+#   pip install onnxruntime==1.16.3
+
+# ==============================================================================
+# Installation Instructions:
+# ==============================================================================
+# 1. Install cross-platform requirements:
+#    pip install -r requirements_cross_platform.txt
+#
+# 2. Run GPU detection and install appropriate packages:
+#    python detect_gpu.py
+#    Follow the recommended installation commands
+#
+# 3. Install optional packages if needed:
+#    pip install camelot-py[cv] tabula-py konlpy

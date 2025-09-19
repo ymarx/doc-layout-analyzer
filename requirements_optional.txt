@@ -1,0 +1,105 @@
+# Optional Dependencies for Advanced Features
+# Document Layout Analyzer - 고급 기능용 선택적 패키지
+
+# ==============================================================================
+# Advanced Layout Analysis (고급 레이아웃 분석)
+# ==============================================================================
+# PaddleX for PP-Structure layout analysis
+# paddlex>=2.0.0  # 현재 설치 복잡성으로 인해 주석 처리
+
+# ==============================================================================
+# Alternative Document Converter (백업 문서 변환기)
+# ==============================================================================
+# Docling for fallback document processing
+# docling>=1.0.0  # IBM 개발, 복잡한 의존성으로 인해 주석 처리
+
+# ==============================================================================
+# Web API Server (웹 API 서버 - 개발용)
+# ==============================================================================
+# FastAPI and Uvicorn are already in main requirements but only used for development
+# They are included in cross-platform requirements for future web interface
+
+# ==============================================================================
+# Additional OCR Engines (추가 OCR 엔진)
+# ==============================================================================
+# Microsoft TrOCR for advanced text recognition
+# transformers[torch]>=4.30.0  # Already in main requirements
+
+# Azure Cognitive Services (requires API key)
+# azure-cognitiveservices-vision-computervision>=0.9.0
+
+# Google Cloud Vision (requires API key and credentials)
+# google-cloud-vision>=3.0.0
+
+# ==============================================================================
+# Enhanced Image Processing (향상된 이미지 처리)
+# ==============================================================================
+# Advanced image preprocessing
+imageio>=2.25.0
+scikit-learn>=1.3.0
+
+# Advanced image filters and enhancement
+scipy>=1.10.0
+
+# ==============================================================================
+# Database Connectors (데이터베이스 연결)
+# ==============================================================================
+# PostgreSQL for large-scale document storage
+# psycopg2-binary>=2.9.0
+
+# MongoDB for document metadata storage
+# pymongo>=4.0.0
+
+# Redis for caching and session management
+# redis>=4.5.0
+
+# ==============================================================================
+# Export Formats (추가 내보내기 형식)
+# ==============================================================================
+# Excel advanced operations
+xlsxwriter>=3.0.0
+
+# Advanced PDF operations
+reportlab>=4.0.0
+
+# ==============================================================================
+# Machine Learning Models (기계학습 모델)
+# ==============================================================================
+# Hugging Face Hub for model downloads
+huggingface-hub>=0.16.0
+
+# ONNX model optimization
+onnx>=1.14.0
+
+# ==============================================================================
+# Development and Debugging (개발 및 디버깅)
+# ==============================================================================
+# Memory profiling
+memory-profiler>=0.60.0
+
+# Performance monitoring
+py-spy>=0.3.14
+
+# Advanced logging
+structlog>=23.1.0
+
+# ==============================================================================
+# Installation Instructions:
+# ==============================================================================
+# Install specific optional features:
+#
+# For advanced layout analysis:
+#   pip install imageio scikit-learn scipy
+#
+# For enhanced export capabilities:
+#   pip install xlsxwriter reportlab
+#
+# For ML model optimization:
+#   pip install huggingface-hub onnx
+#
+# For development tools:
+#   pip install memory-profiler structlog
+#
+# For cloud OCR services (requires API keys):
+#   pip install azure-cognitiveservices-vision-computervision
+#   pip install google-cloud-vision

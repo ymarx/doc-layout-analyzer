@@ -118,5 +118,18 @@ temp/
 # Keep template examples but ignore large generated files
 !templates/definitions/*.json
 
-# Docker deployment documentation (exclude from git)
-DOCKER_DEPLOYMENT.md
+# Installation and documentation files to KEEP in git
+!WINDOWS_INSTALL_GUIDE.md
+!INSTALLATION_GUIDE.md
+!requirements_windows.txt
+!requirements_cross_platform.txt
+!install_windows.bat
+!install_auto.py
+!detect_gpu.py
+!test_installation.py
+
+# GPU config (generated locally, not shared)
+config/gpu_config.json
+
+# Docker deployment documentation (keep in git now)
+!DOCKER_DEPLOYMENT.md
